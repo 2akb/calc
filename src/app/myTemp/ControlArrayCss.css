@@ -1,0 +1,39 @@
+.mainDiv {
+  background-color: rgb(191, 241, 250);
+}
+
+.unitSymb {
+  background-color: green;
+  color: red;
+  padding-left: 20px;
+  font-size: 36px;
+}
+
+.th {
+  background-color: white;
+  text-align: left;
+}
+.thSymb {
+  text-align: center;
+}
+
+.td {
+  background-color: lightskyblue;
+}
+
+.tdVal {
+  background-color: yellow;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.tdForm {
+  background-color: rgb(241, 197, 236);
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.tdUnit {
+  background-color: rgb(199, 250, 183);
+  text-align: center;
+  padding-left: 4px;
+  padding-right: 4px;
+}

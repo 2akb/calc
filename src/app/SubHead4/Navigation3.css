@@ -1,0 +1,139 @@
+/* https://codepen.io/wanni/pen/kaeNjx  + Bartek react-router-dom */
+
+/* define a fixed width for the entire menu */
+
+.main2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 6rem; */
+  /* min-height: 100vh; */
+}
+
+
+.navigation {
+  max-width: 250px;
+}
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu,
+.submenu {
+  list-style: none;
+  /* padding: 0;*/
+  margin: 0;
+  padding: 0 30px 0px 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  display: block;
+  text-decoration: none;
+  width : 300px;
+  word-spacing: 6px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+  background-color: #C5C5C5;
+  transform: translateX(6px);
+}
+
+.mainmenu a.active {
+  border-left: 10px gray solid;
+  transform: translateX(0);
+  color: rgb(156, 137, 137);
+}
+
+.mainmenu li:nth-child(1) a.active {
+  border-left-color: green;
+}
+
+.mainmenu li:nth-child(2) a.active {
+  border-left-color: blue;
+}
+
+.mainmenu li:nth-child(3) a.active {
+  border-left-color: orange;
+}
+
+.mainmenu li:nth-child(4) a.active {
+  border-left-color: red;
+}
+
+.mainmenu li:nth-child(5) a.active {
+  border-left-color: #fbff00;
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+  /* transition: 5s; */
+}
+
+
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  background-color: #999;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: #666;
+  transform: translateX(6px);
+}
+
+.submenu a.active {
+  border-left: 10px gray solid;
+  transform: translateX(0);
+  color: rgb(156, 137, 137);
+}
+
+.submenu li:nth-child(1) a.active {
+  border-left-color: green;
+}
+
+.submenu li:nth-child(2) a.active {
+  border-left-color: blue;
+}
+
+.submenu li:nth-child(3) a.active {
+  border-left-color: orange;
+}
+
+.submenu li:nth-child(4) a.active {
+  border-left-color: red;
+}
+
+.submenu li:nth-child(5) a.active {
+  border-left-color: #fbff00;
+}
+
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  /* transition: all 0.2s ease-out; */
+  transition-duration: 0.3s;
+  transition-delay: 0.75s;
+}

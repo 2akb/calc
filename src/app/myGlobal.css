@@ -1,0 +1,115 @@
+body {
+  background-color: rgb(127, 233, 252);
+  /* // maxWidth: "1200px"; */
+  /* margin: 20px; */
+  position: absolute;
+  align-content: center;
+  /* // left: "50%"; */
+  border: #cca703 solid 15px;
+  /* margin: 30px; */
+  /* padding: 20px; */
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
+  color: rgb(1, 15, 59);
+  background-color: rgb(138, 208, 255);
+  border: #4af129 solid 15px;
+}
+
+main {
+  /* justify-content: space-between; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  align-items: center;
+  /* padding: 6rem; */
+  /* min-height: 100vh; */
+  background-color: rgb(229, 255, 0);
+  border: #fa0606 solid 15px;
+  /* margin: 20px; */
+}
+
+.contents {
+  align-items: start;
+  background-color: rgb(229, 255, 0);
+  border: #f70b0b solid 15px;
+  /* margin: 20px; */
+}
+
+.calcContent {
+  background-color: rgb(229, 255, 0);
+  border: #3c9753 solid 15px;
+}
+
+.textCont {
+  background-color: rgb(192, 133, 247);
+  border: rgb(0, 200, 250) solid 20px;
+}
+
+.searchResult {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 6rem; */
+  /* min-height: 100vh; */
+  background-color: rgb(229, 255, 0);
+  /* border: #fa0606 solid 15px; */
+  /* margin: 20px; */
+}
+
+.genAdvert {
+  font-size: 35px;
+  color: green;
+  background-color: rgb(255, 255, 0);
+  border: rgb(43, 158, 39) solid 10px;
+  /* height: 60px;
+  border: 0px;
+  padding: 0px; */
+  margin: 0px;
+}
+
+.contentDiv {
+  box-sizing: border-box;
+  display: flex;
+  background-color: rgb(225, 243, 66);
+  border: rgb(250, 124, 0) solid 20px;
+}
+
+.childrenDiv {
+  background-color: rgb(100, 231, 187);
+  min-width: 600px;
+}
+
+.themAdvert {
+  font-size: 35px;
+  color: black;
+  background-color: rgb(192, 133, 247);
+  float: right;
+  border: rgb(0, 200, 250) solid 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.4em;
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: 0;
+}
+
+footer {
+  text-align: center;
+  /* align-content: center; */
+  /* line-height: 1.7; */
+  background-color: rgb(217, 255, 3);
+  border: #c293ee solid 15px;
+  margin: 0px;
+}
